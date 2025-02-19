@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/Index.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="container_2">
+            <a href="#">Шкафы</a>
+            <a href="#">Тумбы</a>
+            <a href="#">Кровати</a>
+            <a href="#">Кухни</a>
+            <a href="#">Стенки</a>
+            <div class="icon"></div>
+        </div>
+    </header>
+
+    <div class="foto_container">
+        <div class="foto">
+            <img src="im/Kitchen.jpg" class="foto_im" alt="Изображение на всю ширину">
+            <p class="text_1">Откройте для себя эстетику нашей коллекции мебели</p>
+            <a href="#" class="button">Узнать больше</a>
+        </div>
+    </div>
+
+    <div class="katalog_container">
+        <p class="katalog_text">ПОПУЛЯРНОЕ</p>
+        <hr class="katalog_hr">
+    </div>
+
+    <div class="category-container">
+        <div class="category-item">
+            <a href="URL_КАТАЛОГА_КРОВАТЕЙ" class="category-link">
+                <img src="im/bed.jpg" alt="Кровати" class="category-image">
+                <span class="category-title">Кровати</span>
+            </a>
+        </div>
+
+        <div class="category-item">
+            <a href="URL_КАТАЛОГА_ШКАФОВ" class="category-link">
+                <img src="im/shkaf.jpg" alt="Шкафы" class="category-image">
+                <span class="category-title">Шкафы</span>
+            </a>
+        </div>
+
+        <div class="category-item">
+            <a href="URL_КАТАЛОГА_КУХОНЬ" class="category-link">
+                <img src="im/kit.jpg" alt="Кухни" class="category-image">
+                <span class="category-title">Кухни</span>
+            </a>
+        </div>
+
+        <div class="category-item">
+            <a href="URL_КАТАЛОГА_СТЕНОК" class="category-link">
+                <img src="im/wal.jpg" alt="Стенки" class="category-image">
+                <span class="category-title">Стенки</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="katalog_container_1">
+        <p class="katalog_text_1">ПОЧЕМУ ВЫБИРАЮТ ИМЕННО НАС</p>
+        <hr class="katalog_hr_1">
+    </div>
+    
+    <script defer>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.container');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

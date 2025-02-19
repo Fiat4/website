@@ -1,0 +1,113 @@
+    body {
+        margin: 0;
+        font-family: 'Kaisei Decol', 'Marhey', Arial, sans-serif;
+        background-color: #FFF1F1;
+    }
+    
+    .container {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        background-color: #EBEBEB;
+        z-index: 100;
+    }
+    
+    .icon {
+        background-image: url("icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 90px;
+        height: 75px;
+    }
+    
+    .container_2 a {
+        float: left;
+        display: flex;
+        position: relative;
+        left: 8%;
+        margin-right: 30px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: Kaisei Decol;
+        letter-spacing: 10px;
+        font-size: 20px;
+        padding: 26px 15px;
+        text-decoration: none;
+    }
+    
+    .container_2 a:hover {
+        background-color: rgb(71, 71, 71);
+        color: rgb(255, 255, 255);
+    }
+    
+    .foto {
+        width: 100%;
+        /* Занимает всю доступную ширину*/
+        height: 780px;
+        /* Задайте желаемую высоту */
+        overflow: hidden;
+        /* Скрывает все, что выходит за рамки*/
+        display: flex;
+        /* для выравнивания изображения */
+        align-items: flex-end;
+        /* выравниваем по нижней границе контейнера */
+        /* margin-top: 20px; если нужны отступы сверху */
+    }
+    
+    .foto img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* изображение занимает всю высоту родителя */
+        object-fit: cover;
+        object-position: bottom;
+        filter: brightness(50%);
+        /* выравниваем изображение по низу контейнера*/
+    }
+    
+    .text_1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Marhey;
+        font-size: 36px;
+        color: #ffffff;
+        white-space: nowrap;
+    }
+    /* .fon {
+        display: block;
+        background-color: #FFF1F1;
+        width: 100px;
+        height: 100px;
+    } */
+    
+    .idea {
+        width: 100%;
+        padding: 70px;
+    }
+    
+    .idea_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* Распределяем пространство между элементами */
+    }
+    
+    .idea_text {
+        text-align: left;
+        padding-right: 20px;
+        /* Добавляем пространство между текстом и изображением */
+        max-width: 50%;
+        /* задаем макс ширину для текста*/
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    
+    .h1 {
+        text-align: center;
+    }
